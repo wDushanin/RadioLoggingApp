@@ -1,5 +1,7 @@
-DS_Store
-AppleDouble
-LSOverride
 venv
+.vscode
+.DS_Store
 __pycache__
+.pytest_cache
+.env
+test_db
