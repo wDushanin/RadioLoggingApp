@@ -1,4 +1,3 @@
-<!--Reference Website: https://bbbootstrap.com/snippets/bootstrap-property-advanced-search-form-collapse-45610458#-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Radio Logging App</title>
 
     <!--Online CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
@@ -15,11 +14,11 @@
 
 <body class="bg-dark">
 
-    <div class="container p-3 mt-5 border border-info rounded bg-info">
+    <div class="container-fluid p-3 mt-5 border border-info rounded-top bg-info">
 
         <div class="card mx-auto">
 
-            <div class="card-body rounded p-5">
+            <div class="card-body rounded-top p-5">
                 <div class="card-title mx-auto">
                     <h2>Radio Log Search</h2>
                 </div>
@@ -46,34 +45,65 @@
         </div>
     </div>
 
-    <div class="container bg-light">
+    <div class="container-fluid bg-info pb-2 rounded-bottom">
 
-        <table class="table table-info table-striped table-hover">
+        <table class="table table-info table-striped table-hover rounded">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Site ID</th>
+                    <th scope="col">Action</th>
+                    <th scope="col">Source Name</th>
+                    <th scope="col">Source Type</th>
+                    <th scope="col">Source ID</th>
+                    <th scope="col">Target Type</th>
+                    <th scope="col">Target ID</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Call Type</th>
+                    <th scope="col">Call Sign</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">00:00</th>
+                    <td>ID-00</td>
+                    <td>-action-</td>
+                    <td>-name-</td>
+                    <td>-type-</td>
+                    <td>-0000-</td>
+                    <td>-type-</td>
+                    <td>-0000-</td>
+                    <td>4</td>
+                    <td>-type-</td>
+                    <td>-sign-</td>
                 </tr>
+
                 <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <th scope="row">00:00</th>
+                    <td>ID-01</td>
+                    <td>-action-</td>
+                    <td>-name-</td>
+                    <td>-type-</td>
+                    <td>-0000-</td>
+                    <td>-type-</td>
+                    <td>-0000-</td>
+                    <td>4</td>
+                    <td>-type-</td>
+                    <td>-sign-</td>
                 </tr>
+
                 <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <th scope="row">00:00</th>
+                    <td>ID-02</td>
+                    <td>-action-</td>
+                    <td>-name-</td>
+                    <td>-type-</td>
+                    <td>-0000-</td>
+                    <td>-type-</td>
+                    <td>-0000-</td>
+                    <td>4</td>
+                    <td>-type-</td>
+                    <td>-sign-</td>
                 </tr>
             </tbody>
         </table>
