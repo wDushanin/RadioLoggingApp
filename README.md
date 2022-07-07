@@ -1,7 +1,8 @@
 # RadioLoggingApp
 
 1.	Create virtual environment: 
-python3 -m venv venv
+
+    python3 -m venv venv
 
 2. Point to virtual environment by trashing terminal and opening a new terminal to activate your virtual environment
 
