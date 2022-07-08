@@ -45,9 +45,23 @@
         </div>
     </div>
 
+    <div class="container-fluid pb-0 m-0 bg-info">
+        <div class="input-group p-2 bg-dark rounded-top">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Sort by:</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="callSign">CALL SIGN</option>
+                <option value="radioID">RADIO ID</option>
+                <option value="name">NAME</option>
+            </select>
+        </div>
+    </div>
+
     <div class="container-fluid bg-info pb-2 rounded-bottom">
 
-        <table class="table table-info table-striped table-hover rounded">
+        <table class="table table-info table-striped table-hover rounded mt-0 pt-0">
             <thead class="bg-dark text-light">
                 <tr>
                     <th scope="col">Time</th>
