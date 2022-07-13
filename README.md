@@ -20,9 +20,23 @@
   
 3. Install requirements.txt
 
-    Run pip install -r requirements.txt (Python 2), or pip3 install -r requirements.txt (Python 3)
+    pip install -r requirements.txt (Python 2)
+    
+    OR
+    
+    pip3 install -r requirements.txt (Python 3)
+    
+    OR (when using company laptop)
+    
+    pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt
 
 4. Run the app: 
 
         Normal Mode: flask run
         Development Mode (shows changes without restarting server): FLASK_ENV=development flask run 
+        
+JUST A NOTE: 
+
+To install anything with pip when using the company laptop, use the following: 
+
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org <package_name>
