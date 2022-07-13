@@ -35,6 +35,8 @@
         Normal Mode: flask run
         Development Mode (shows changes without restarting server): FLASK_ENV=development flask run 
         
+5.  You should be able to view the app in the browser at: http://127.0.0.1:5000/
+        
 JUST A NOTE: 
 
 To install anything with pip when using the company laptop, use the following: 
