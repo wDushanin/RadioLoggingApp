@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS radio;
 
 USE radio;
 
-CREATE TABLE IF NOT EXISTS `final`.`rlogs` (
+CREATE TABLE IF NOT EXISTS `radio`.`rlogs` (
     `log_id` INT NOT NULL AUTO_INCREMENT,
     `time` INT NOT NULL DEFAULT 0,
     `site_num` INT NOT NULL DEFAULT 0,
