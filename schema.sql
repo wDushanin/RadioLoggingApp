@@ -4,15 +4,15 @@ USE radio;
 
 CREATE TABLE IF NOT EXISTS `radio`.`rlogs` (
     `log_id` INT NOT NULL AUTO_INCREMENT,
-    `time` INT NOT NULL DEFAULT 0,
-    `site_num` INT NOT NULL DEFAULT 0,
+    `time` INT NULL DEFAULT NULL,
+    `site_num` INT NULL DEFAULT NULL,
     `action` VARCHAR(10) NULL DEFAULT NULL,
     `source_type` VARCHAR(10) NULL DEFAULT NULL,
-    `source_id` INT NOT NULL DEFAULT 0,
+    `source_id` INT NULL DEFAULT NULL,
     `target_type` VARCHAR(10) NULL DEFAULT NULL,
-    `target_id` INT NOT NULL DEFAULT 0,
-    `channel_num` INT NOT NULL DEFAULT 0,
-    `call_type` INT NOT NULL DEFAULT 0,
+    `target_id` INT NULL DEFAULT NULL,
+    `channel_num` INT NULL DEFAULT NULL,
+    `call_type` INT NULL DEFAULT NULL,
     PRIMARY KEY (`log_id`)
 ) 
 ENGINE = InnoDB 
