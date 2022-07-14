@@ -5,7 +5,7 @@ USE radio;
 
 CREATE TABLE IF NOT EXISTS `radio`.`rlogs` (
     `log_id` INT NOT NULL AUTO_INCREMENT,
-    `time` INT NULL DEFAULT NULL,
+    `time` BIGINT NULL DEFAULT NULL,
     `site_num` INT NULL DEFAULT NULL,
     `action` VARCHAR(10) NULL DEFAULT NULL,
     `source_type` VARCHAR(10) NULL DEFAULT NULL,
