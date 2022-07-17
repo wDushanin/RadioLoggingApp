@@ -75,58 +75,30 @@
                     <th scope="col">Time</th>
                     <th scope="col">Site ID</th>
                     <th scope="col">Action</th>
-                    <th scope="col">Source Name</th>
+                    <!-- <th scope="col">Source Name</th> -->
                     <th scope="col">Source Type</th>
                     <th scope="col">Source ID</th>
                     <th scope="col">Target Type</th>
                     <th scope="col">Target ID</th>
                     <th scope="col">Channel</th>
                     <th scope="col">Call Type</th>
-                    <th scope="col">Call Sign</th>
+                    <!-- <th scope="col">Call Sign</th> -->
                 </tr>
             </thead>
             <tbody>
+                {% for log in logs %}
                 <tr>
-                    <th scope="row">00:00</th>
-                    <td>ID-00</td>
-                    <td>-action-</td>
-                    <td>-name-</td>
-                    <td>-type-</td>
-                    <td>-0000-</td>
-                    <td>-type-</td>
-                    <td>-0000-</td>
-                    <td>4</td>
-                    <td>-type-</td>
-                    <td>-sign-</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">00:00</th>
-                    <td>ID-01</td>
-                    <td>-action-</td>
-                    <td>-name-</td>
-                    <td>-type-</td>
-                    <td>-0000-</td>
-                    <td>-type-</td>
-                    <td>-0000-</td>
-                    <td>4</td>
-                    <td>-type-</td>
-                    <td>-sign-</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">00:00</th>
-                    <td>ID-02</td>
-                    <td>-action-</td>
-                    <td>-name-</td>
-                    <td>-type-</td>
-                    <td>-0000-</td>
-                    <td>-type-</td>
-                    <td>-0000-</td>
-                    <td>4</td>
-                    <td>-type-</td>
-                    <td>-sign-</td>
-                </tr>
+                    <td >{{ log.time }}</td>
+                    <td>{{ log.site_num }}</td>
+                    <td>{{ log.action }}</td>
+                    <td>{{ log.source_type }}</td>
+                    <td>{{ log.source_id }}</td>
+                    <td>{{ log.target_type }}</td>
+                    <td>{{ log.target_id }}</td>
+                    <td>{{ log.channel_num }}</td>
+                    <td>{{ log.call_type }}</td>
+                </tr> 
+                {% endfor %}
             </tbody>
         </table>
 
