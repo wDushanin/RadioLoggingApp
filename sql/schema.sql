@@ -1,6 +1,6 @@
 --Schema for Logging Database
 --Directions: 
---Copy/Paste this schema into MySQL to create this database
+--Copy/Paste this schema into MySQL Workbench to create this database
 CREATE DATABASE IF NOT EXISTS radio;
 
 USE radio;
