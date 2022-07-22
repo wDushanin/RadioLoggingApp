@@ -6,7 +6,11 @@
     
     OR
     
-    py -m venv venv
+    python -m venv venv
+    
+    NOTE:  On the work laptop, use the following if you experience problems:
+    
+    python -m venv .venv
 
 2. Point to virtual environment by trashing terminal and opening a new terminal to activate your virtual environment
 
