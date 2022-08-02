@@ -5,7 +5,7 @@ db = SQLAlchemy()
 
 
 class Log(db.Model):
-    __tablename__ = 'rlogs'
+    __tablename__ = 'RadioLogTable'
 
     log_id = db.Column(db.Integer, primary_key=True)
     time = db.Column(db.Integer)
