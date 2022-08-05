@@ -23,6 +23,25 @@
                 <div class="card-title mx-auto">
                     <h2>Radio Log Search</h2>
                 </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Search by:</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="callSign">CALL SIGN</option>
+                        <option value="radioID">RADIO ID</option>
+                        <option value="name">NAME</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -79,10 +98,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script>$(document).ready(function () {
-        $('#logTable').DataTable();
+        $('#logTable').DataTable({
+            searching: false,
+        })
     });
 </script>
 </body>
