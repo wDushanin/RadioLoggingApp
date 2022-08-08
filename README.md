@@ -22,7 +22,7 @@
     
             Windows: venv\bin\activate.bat
   
-3. Install requirements.txt
+3. Install requirements.txt (or req.txt for Linux)
 
     --- ON PERSONAL MACHINE ---
 
