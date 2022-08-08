@@ -40,12 +40,16 @@
 
     pip install -r req.txt
 
-4. Run the app: 
+4. Create .env file
+    
+    The file .env.sample shows the template needed to enter your database URL
+    
+5. Run the app: 
 
         Normal Mode: flask run
         Development Mode (shows changes without restarting server): FLASK_ENV=development flask run 
         
-5.  You should be able to view the app in the browser at: http://127.0.0.1:5000/
+6.  You should be able to view the app in the browser at: http://127.0.0.1:5000/
         
 JUST A NOTE: 
 
