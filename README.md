@@ -24,15 +24,21 @@
   
 3. Install requirements.txt
 
+    --- ON PERSONAL MACHINE ---
+
     pip install -r requirements.txt (Python 2)
     
     OR
     
     pip3 install -r requirements.txt (Python 3)
     
-    OR (when using company laptop)
+    --- ON COMPANY LAPTOP (REGULAR NETWORK) ---
     
     pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt
+    
+    --- ON DEVELOPMENT LINUX SERVER ---
+
+    pip install -r req.txt
 
 4. Run the app: 
 
