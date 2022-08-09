@@ -22,7 +22,7 @@
                 </div>
 
                 <h1>You Searched For: <em> {{ searched }} </em></h1>
-                <a class="btn btn-warning btn-rounded btn-lg mb-3 text-white" href="{{ url_for('index') }}">New Search</a>
+                <a class="btn rounded btn-warning text-dark btn-lg btn-block border border-dark border-5 mb-2" href="{{ url_for('index') }}">New Search</a>
 
             </div>
         </div>
@@ -63,12 +63,7 @@
                 {% endfor %}
             </tbody>
         </table>
-
-        <div>
-            <button type="button" class="btn rounded btn-warning text-dark btn-lg btn-block border border-dark border-5 mb-2">New Search</button>
-
-        </div>
-
+        
     </div>
 
 </body>
