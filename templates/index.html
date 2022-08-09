@@ -23,31 +23,24 @@
                     <h2>Radio Log Search</h2>
                 </div>
 
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Search by:</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="callSign">CALL SIGN</option>
-                        <option value="radioID">RADIO ID</option>
-                        <option value="name">NAME</option>
-                    </select>
+                <div>
+                    <form method="POST" action="{{ url_for('search')}}" class="d-flex">
+                        {{ form.hidden_tag() }}
+                        <input class="form-control me-2" type="search" placeholder="Search by Radio ID" aria-label="Search" name="searched" autocomplete="off">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="">
-                    <div class="input-group-append">
-                        <button class="btn btn-info" type="button">Submit</button>
-                    </div>
-                </div>
+
+
+
             </div>
         </div>
     </div>
 
-    <div class="container-fluid pb-0 m-0 bg-info">
+    <!-- <div class="container-fluid pb-0 m-0 bg-info">
         <div class="input-group p-2 bg-dark rounded-top">
-            <div class="input-group-prepend">
+            <div class="input-group-prepend">F
                 <label class="input-group-text" for="inputGroupSelect01">Sort by:</label>
             </div>
             <select class="custom-select" id="inputGroupSelect01">
@@ -65,7 +58,7 @@
                 <option value="sort-callSign">CALL SIGN</option>
             </select>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid bg-info pb-2 rounded-bottom">
 
@@ -75,14 +68,12 @@
                     <th scope="col">Time</th>
                     <th scope="col">Site ID</th>
                     <th scope="col">Action</th>
-                    <!-- <th scope="col">Source Name</th> -->
                     <th scope="col">Source Type</th>
                     <th scope="col">Source ID</th>
                     <th scope="col">Target Type</th>
                     <th scope="col">Target ID</th>
                     <th scope="col">Channel</th>
                     <th scope="col">Call Type</th>
-                    <!-- <th scope="col">Call Sign</th> -->
                 </tr>
             </thead>
             <tbody>
@@ -101,11 +92,6 @@
                 {% endfor %}
             </tbody>
         </table>
-
-        <div>
-            <button type="button" class="btn rounded btn-warning text-dark btn-lg btn-block border border-dark border-5 mb-2">New Search</button>
-
-        </div>
 
     </div>
 
