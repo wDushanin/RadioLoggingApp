@@ -23,34 +23,24 @@
                     <h2>Radio Log Search</h2>
                 </div>
 
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Search by:</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="radioID">RADIO ID</option>
-
-                        <!--TO DO: Implement Search by Call Sign and Name-->
-                        <!-- <option value="callSign">CALL SIGN</option> -->
-                        <!-- <option value="name">NAME</option> -->
-
-                    </select>
+                <div>
+                    <form method="POST" action="{{ url_for('search')}}" class="d-flex">
+                        {{ form.hidden_tag() }}
+                        <input class="form-control me-2" type="search" placeholder="Search by Radio ID" aria-label="Search" name="searched" autocomplete="false">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="">
-                    <div class="input-group-append">
-                        <button class="btn btn-info" type="button">Submit</button>
-                    </div>
-                </div>
+
+
+
             </div>
         </div>
     </div>
 
     <!-- <div class="container-fluid pb-0 m-0 bg-info">
         <div class="input-group p-2 bg-dark rounded-top">
-            <div class="input-group-prepend">
+            <div class="input-group-prepend">F
                 <label class="input-group-text" for="inputGroupSelect01">Sort by:</label>
             </div>
             <select class="custom-select" id="inputGroupSelect01">
