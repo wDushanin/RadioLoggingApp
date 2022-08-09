@@ -32,8 +32,8 @@ def search():
     form = SearchForm()
     logs = Log.query
     if form.validate_on_submit():
-        log_searched = form.searched.data
+        result = form.searched.data
         #Query the Database
-        logs = logs.filter(Log.source_id.like(log_searched))
+        logs = logs.filter(Log.source_id.like(result))
         logs = logs.order_by(Log.time).all()
-        return render_template("search.html", form=form, searched=log_searched, logs=logs)
+        return render_template("search.html", form=form, searched=result, logs=logs)
